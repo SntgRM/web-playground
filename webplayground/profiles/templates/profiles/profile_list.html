@@ -14,9 +14,9 @@
               <div class="row p-1">
                 <div class="col-md-12">
                   {% if profile.avatar %}
-                    <img src="{{profile.avatar.url}}" class="img-fluid profile-avatar">
+                    <img src="{{profile.avatar.url}}" class="img-fluid profile-avatar rounded-circle">
                   {% else %}
-                    <img src="{% static 'registration/img/no-avatar.jpg' %}" class="img-fluid profile-avatar">
+                    <img src="{% static 'registration/img/no-avatar.jpg' %}" class="img-fluid profile-avatar rounded-circle">
                   {% endif %}
                   <p class="profile-data">
                     <b>{{profile.user|truncatechars:"16"}}</b><br>
